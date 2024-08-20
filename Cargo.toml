@@ -1,0 +1,14 @@
+[package]
+name = "parser_calibri_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+chrono = "0.4.38"
+tokio = { version = "1.38.0", features = ["full"] }
+sqlx = { version = "0.7", features = ["runtime-tokio", "postgres", "chrono"] }
+reqwest = "0.12.5"
+dotenv = "0.15.0"
+tokio-cron-scheduler = "0.11.0"
